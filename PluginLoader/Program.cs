@@ -9,7 +9,7 @@ namespace PluginApp
         static void Main(string[] args)
         {
             //string pluginDir = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), "Plugins");
-            string pluginDir = Path.GetFullPath(@"..\..\..\..\PluginLoader\ExamplePlugin\bin\Debug");
+            var pluginDir = Path.GetFullPath(@"..\..\..\..\PluginLoader\ExamplePlugin\bin\Debug");
 
             var loader = new PluginCommon.PluginLoader(pluginDir);
             loader.PluginLoadComplete += PluginLoadComplete;
